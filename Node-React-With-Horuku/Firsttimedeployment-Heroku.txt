@@ -1,0 +1,8 @@
+1. Create account in heroku.com
+2. Commit code to git
+3. Install Heroku CLI
+4. In command prompt , type command heroku create
+
+d:\Users\mehjabeenb\Learning\Node With React\Node-With-React\server>heroku create
+Creating app... done, pacific-everglades-13818
+https://pacific-everglades-13818.herokuapp.com/ | https://git.heroku.com/pacific-everglades-13818.git
