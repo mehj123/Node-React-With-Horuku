@@ -1,0 +1,40 @@
+1. npm install passport-google-oauth20@2 --save 
+2. Go to console.developers.google.com
+3. Login to google account
+4. Click on Create project and create a new project
+
+// Not required as Google API is disabled
+// 5. Click on Enable API
+// 6. Search for Google+ (for OAUTH)
+
+8. Click on Configure Consent screen
+9. Provide Application name
+10. Everything else is optional, click on save
+11. Click on Create Credentials = OAUTH client ID
+12. Select Web application as Application type
+13. Leave the name as Web client 1
+14. Give the below
+    a. Authorized JavaScript origins : http://localhost:5000
+    b. Authorized redirect URIs : http://localhost:5000/auth/google/callback
+15. Click on Create
+16. Sample credentials:
+    a. Client ID : 961907838793-4729r0ugdqt1o6kqu93s6ciktq3ef9ob.apps.googleusercontent.com
+    b. Client Secret : orO0XROblSTMUKOahKFzzBs2
+17. Create keys.js as below
+    module.exports={
+    googleClientId: '961907838793-4729r0ugdqt1o6kqu93s6ciktq3ef9ob.apps.googleusercontent.com',
+    googleClientId: 'aGXA_6ur9uYynb96SIxPAT-K'
+};
+18. Add the keys.js in .gitignore
+node_modules
+keys.js
+
+19. URL formed when the google login is invoked
+https://accounts.google.com/signin/oauth/oauthchooseaccount?
+client_id=961907838793-4729r0ugdqt1o6kqu93s6ciktq3ef9ob.apps.googleusercontent.com&
+as=DbYbt-dM_3nKhoYMysCT9A&
+destination=http%3A%2F%2Flocalhost%3A5000&approval_state=!ChRVSWdVOTRBWFVJSXNmV1lXYVlIehIfYzlLZEpGYVQ1WUVUUUhVU2RlLXNqMHlyelZnSjBSWQ%E2%88%99AJDr988AAAAAXXY0Mx4Xm_shIF2huk8-236pb5T69f0X&oauthgdpr=1&xsrfsig=ChkAeAh8T31Wxy29GziBHMwj1vmbUgJtLDNtEg5hcHByb3ZhbF9zdGF0ZRILZGVzdGluYXRpb24SBXNvYWN1Eg9vYXV0aHJpc2t5c2NvcGU&
+flowName=GeneralOAuthFlow
+
+
+ 

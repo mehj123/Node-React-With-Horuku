@@ -1,0 +1,11 @@
+// for deploying the changes without actually restarting the server
+npm install --save nodemon
+
+in package.json add
+"scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js" // for dev mode
+  },
+
+  and run the command as npm run dev
+

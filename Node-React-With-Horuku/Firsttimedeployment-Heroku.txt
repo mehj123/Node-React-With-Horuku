@@ -6,3 +6,6 @@
 d:\Users\mehjabeenb\Learning\Node With React\Node-With-React\server>heroku create
 Creating app... done, pacific-everglades-13818
 https://pacific-everglades-13818.herokuapp.com/ | https://git.heroku.com/pacific-everglades-13818.git
+
+
+If you specify as heroku create <app-name> you can specify your own name instead of auto-generated name like pacific-everglades-13818.git
